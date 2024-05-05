@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sim_1/new/tb.v,1714788151,verilog,,,,testbench,,,../../../../VGA_Basys3.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1714785850,verilog,,C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v,,clk_wiz_0,,,../../../../VGA_Basys3.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1714785850,verilog,,C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../VGA_Basys3.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v,1714788038,verilog,,C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v,,vga,,,../../../../VGA_Basys3.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v,1714788003,verilog,,C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sim_1/new/tb.v,,vga_top,,,../../../../VGA_Basys3.srcs/sources_1/ip/clk_wiz_0,,,,,

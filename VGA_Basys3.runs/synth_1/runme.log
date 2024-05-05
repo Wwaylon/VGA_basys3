@@ -1,0 +1,916 @@
+
+*** Running vivado
+    with args -log vga_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source vga_top.tcl -notrace
+Command: synth_design -top vga_top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 684.879 ; gain = 178.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_axi_clk_config' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_axi_clk_config.vhd:183]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_axi_lite_ipif' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_axi_lite_ipif.vhd:245]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_slave_attachment' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_slave_attachment.vhd:236]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 11 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_address_decoder' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_address_decoder.vhd:186]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 6 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b00000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized0' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized0' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized1' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized1' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized2' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized2' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized3' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized3' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized4' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized4' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized5' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized5' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized6' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized6' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized7' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized7' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_pselect_f__parameterized8' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 0 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b01000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_pselect_f__parameterized8' (1#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_address_decoder' (2#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_address_decoder.vhd:186]
+INFO: [Synth 8-226] default block is never used [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_slave_attachment.vhd:438]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_slave_attachment' (3#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_slave_attachment.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_axi_lite_ipif' (4#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/clk_wiz_0_axi_lite_ipif.vhd:245]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz_drp' declared at 'c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:115' bound to instance 'CLK_CORE_DRP_I' of component 'clk_wiz_0_clk_wiz_drp' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_axi_clk_config.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz_drp' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:159]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69' bound to instance 'clk_inst' of component 'clk_wiz_0_clk_wiz' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:535]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 35.750000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (6#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (8#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153' bound to instance 'xpm_cdc_single_rst' of component 'xpm_cdc_single' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:547]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (9#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_mon' declared at 'c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_mon.vhd:106' bound to instance 'clk_mon_inst' of component 'clk_wiz_0_clk_mon' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:560]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_mon' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_mon.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_mon' (10#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_mon.vhd:118]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'xpm_cdc_array_single_glitch' of component 'xpm_cdc_array_single' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:571]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:958]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (11#1) [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+WARNING: [Synth 8-6014] Unused sequential element load_enable_reg_actual_reg was removed.  [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:515]
+WARNING: [Synth 8-6014] Unused sequential element SEN_reg was removed.  [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:517]
+WARNING: [Synth 8-3848] Net srdy in module/entity clk_wiz_0_clk_wiz_drp does not have driver. [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:287]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz_drp' (12#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_soft_reset' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:142]
+	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
+	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:273]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_soft_reset' (13#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/proc_common_v3_00_a/hdl/src/vhdl/clk_wiz_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_axi_clk_config' (14#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_axi_clk_config.vhd:183]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (15#1) [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+WARNING: [Synth 8-7023] instance 'clock_instance' of module 'clk_wiz_0' has 28 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v:1]
+	Parameter full_line bound to: 800 - type: integer 
+	Parameter h_front_porch bound to: 16 - type: integer 
+	Parameter h_back_porch bound to: 48 - type: integer 
+	Parameter h_sync_pulse bound to: 96 - type: integer 
+	Parameter active_h_area bound to: 640 - type: integer 
+	Parameter full_row bound to: 525 - type: integer 
+	Parameter v_front_porch bound to: 10 - type: integer 
+	Parameter v_back_porch bound to: 33 - type: integer 
+	Parameter v_sync_pulse bound to: 2 - type: integer 
+	Parameter active_v_area bound to: 480 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (16#1) [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_top' (17#1) [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v:1]
+WARNING: [Synth 8-3331] design vga_timing has unconnected port clk
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[0]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[1]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[2]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[3]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[4]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[5]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[7]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[8]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[9]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[10]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[11]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[12]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[13]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[14]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[15]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[16]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[17]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[18]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[19]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[20]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[21]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[22]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[23]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[24]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[25]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[26]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_Data[27]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_BE[0]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_BE[1]
+WARNING: [Synth 8-3331] design clk_wiz_0_soft_reset has unconnected port Bus2IP_BE[2]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_mon has unconnected port Ref_Clk
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_mon has unconnected port Reset
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_RdCE[5]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_RdCE[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_RdCE[7]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[0]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[5]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[7]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[0]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[1]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[2]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[3]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[4]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[5]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[7]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[8]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[9]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f__parameterized8 has unconnected port A[10]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f has unconnected port A[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f has unconnected port A[7]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f has unconnected port A[8]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f has unconnected port A[9]
+WARNING: [Synth 8-3331] design clk_wiz_0_pselect_f has unconnected port A[10]
+WARNING: [Synth 8-3331] design clk_wiz_0_address_decoder has unconnected port Bus_RNW
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 757.422 ; gain = 250.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 757.422 ; gain = 250.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 757.422 ; gain = 250.902
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock_instance/inst'
+Finished Parsing XDC File [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock_instance/inst'
+Parsing XDC File [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock_instance/inst'
+Finished Parsing XDC File [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock_instance/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/constrs_1/new/basys3_master.xdc]
+Finished Parsing XDC File [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/constrs_1/new/basys3_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/constrs_1/new/basys3_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_array_single_glitch'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_array_single_glitch'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_single_rst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_single_rst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 882.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clock_instance/inst. (constraint file  C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for clock_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_array_single_glitch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_instance/inst/CLK_CORE_DRP_I/xpm_cdc_single_rst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clk_wiz_0_slave_attachment'
+WARNING: [Synth 8-3936] Found unconnected internal register 'clkout0_reg_reg' and it is trimmed from '32' to '18' bits. [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:401]
+WARNING: [Synth 8-3936] Found unconnected internal register 'clkfbout_reg_reg' and it is trimmed from '32' to '26' bits. [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz_drp.vhd:398]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'clk_wiz_0_slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
+	               26 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 87    
+	   5 Input      1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_pselect_f__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_wiz_0_address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 12    
+Module clk_wiz_0_slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module xpm_cdc_single 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module xpm_cdc_array_single 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 5     
+Module clk_wiz_0_clk_wiz_drp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 33    
+	               26 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 74    
+	   5 Input      1 Bit        Muxes := 37    
+Module clk_wiz_0_soft_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clk_wiz_0_axi_clk_config 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_active_high_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_axi_clk_config.vhd:435]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[0]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[5]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[6]
+WARNING: [Synth 8-3331] design clk_wiz_0_clk_wiz_drp has unconnected port Bus2IP_WrCE[7]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clock_instance/inst/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clock_instance/inst/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 882.844 ; gain = 376.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_aclk to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_aresetn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awaddr[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_awvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wdata[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wstrb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wstrb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wstrb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wstrb[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_wvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_bready to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_araddr[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_arvalid to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:s_axi_rready to constant 0
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:ref_clk to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |LUT1       |     3|
+|3     |LUT2       |    63|
+|4     |LUT3       |    80|
+|5     |LUT4       |    47|
+|6     |LUT5       |    64|
+|7     |LUT6       |   419|
+|8     |MMCME2_ADV |     1|
+|9     |MUXF7      |    98|
+|10    |MUXF8      |     2|
+|11    |FDCE       |    32|
+|12    |FDRE       |  1244|
+|13    |FDSE       |    64|
+|14    |IBUF       |    14|
+|15    |OBUF       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------------+------+
+|      |Instance                            |Module                     |Cells |
++------+------------------------------------+---------------------------+------+
+|1     |top                                 |                           |  2148|
+|2     |  clock_instance                    |clk_wiz_0                  |  2048|
+|3     |    inst                            |clk_wiz_0_axi_clk_config   |  2048|
+|4     |      AXI_LITE_IPIF_I               |clk_wiz_0_axi_lite_ipif    |   413|
+|5     |        I_SLAVE_ATTACHMENT          |clk_wiz_0_slave_attachment |   413|
+|6     |          I_DECODER                 |clk_wiz_0_address_decoder  |   162|
+|7     |      CLK_CORE_DRP_I                |clk_wiz_0_clk_wiz_drp      |  1588|
+|8     |        xpm_cdc_single_rst          |xpm_cdc_single             |     5|
+|9     |        xpm_cdc_array_single_glitch |xpm_cdc_array_single       |    80|
+|10    |        clk_inst                    |clk_wiz_0_clk_wiz          |     5|
+|11    |      SOFT_RESET_I                  |clk_wiz_0_soft_reset       |    37|
+|12    |  vga_timing_unit                   |vga_timing                 |    61|
++------+------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 888.199 ; gain = 256.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 888.199 ; gain = 381.680
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 893.324 ; gain = 602.617
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 893.324 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/vga_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_top_utilization_synth.rpt -pb vga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  5 15:30:43 2024...

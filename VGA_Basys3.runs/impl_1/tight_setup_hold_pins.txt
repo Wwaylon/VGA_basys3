@@ -1,0 +1,26 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[4]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[3]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[1]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[7]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[8]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[9]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[2]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[5]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[0]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                           bram_addr0/C[6]|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[8]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[0]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                         rgb_reg_reg[10]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                         rgb_reg_reg[11]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[7]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[5]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[9]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[6]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[2]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[4]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[1]/D|
+|      clk_25mhz_clk_wiz_0 |     clk_100mhz_clk_wiz_0 |                                                                                          rgb_reg_reg[3]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

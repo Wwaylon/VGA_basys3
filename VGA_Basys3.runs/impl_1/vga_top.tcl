@@ -66,6 +66,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35ticpg236-1L
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -73,8 +74,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.xpr [current_project]
   set_property ip_output_repo C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/vga_top.dcp
+  read_ip -quiet C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_ip -quiet C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_xdc C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/constrs_1/new/basys3_master.xdc
   link_design -top vga_top -part xc7a35ticpg236-1L
@@ -156,7 +158,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force vga_top.mmi }
   write_bitstream -force vga_top.bit 
   catch {write_debug_probes -quiet -force vga_top}

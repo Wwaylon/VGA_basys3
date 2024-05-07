@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35ticpg236-1L
 
 set_param project.singleFileAddWarning.threshold 0
@@ -26,15 +27,19 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.cache/wt [current_project]
 set_property parent.project_path C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files C:/Users/Waylon/Desktop/Code/VGA_Basys3/car320x240.coe
 read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v
   C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v
 }
+read_ip -quiet C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+
 read_ip -quiet C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]

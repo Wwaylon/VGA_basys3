@@ -9,3 +9,4 @@
 # Log file: C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/vga_top.vds
 # Journal file: C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+source vga_top.tcl -notrace

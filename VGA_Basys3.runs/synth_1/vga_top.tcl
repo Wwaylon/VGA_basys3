@@ -34,6 +34,8 @@ set_property ip_output_repo c:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.c
 set_property ip_cache_permissions {read write} [current_project]
 add_files C:/Users/Waylon/Desktop/Code/VGA_Basys3/car320x240.coe
 read_verilog -library xil_defaultlib {
+  C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/debounce.v
+  C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/sync.v
   C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga.v
   C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.srcs/sources_1/new/vga_top.v
 }

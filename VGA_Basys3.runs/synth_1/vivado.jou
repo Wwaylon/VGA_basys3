@@ -2,11 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue May  7 16:20:27 2024
-# Process ID: 17284
+# Start of session at: Tue May  7 20:20:35 2024
+# Process ID: 15676
 # Current directory: C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
 # Log file: C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1/vga_top.vds
 # Journal file: C:/Users/Waylon/Desktop/Code/VGA_Basys3/VGA_Basys3.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source vga_top.tcl -notrace

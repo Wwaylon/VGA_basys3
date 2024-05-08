@@ -61,3 +61,5 @@ set_property PACKAGE_PIN R19 [get_ports vsync]
 
 set_property PACKAGE_PIN U18 [get_ports reset]						
         set_property IOSTANDARD LVCMOS33 [get_ports reset]
+set_property PACKAGE_PIN W19 [get_ports mode]						
+        set_property IOSTANDARD LVCMOS33 [get_ports mode]

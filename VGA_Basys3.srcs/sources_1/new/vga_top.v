@@ -1,6 +1,6 @@
 module vga_top
 	(
-		input wire clk, reset,
+		input wire clk, reset, mode,
 		input wire [11:0] sw,
 		output wire hsync, vsync,
 		output wire [11:0] rgb
@@ -26,6 +26,9 @@ module vga_top
 	
 	// register for Basys 2 8-bit RGB DAC 
 	reg [11:0] rgb_reg;
+	reg mode_reg =0;
+	wire mode_wire;
+	wire button;
 	//signal to indicate pixel location is within active area
 	wire active_area;
 	wire [9:0]x;
@@ -41,22 +44,42 @@ module vga_top
         .x(x), 
         .y(y)
         );
-         
+      
+     sync sync_unit(
+        .clock(clk_100mhz),
+        .in(mode),
+        .out(mode_wire)
+     );
+     debounce debounce_unit(
+        .clock(clk_100mhz),
+        .in(mode_wire),
+        .out(button),
+        .edj(),
+        .rise(),
+        .fall()
+     );
+     
+     always @(posedge button)
+     begin
+        mode_reg <= ~mode_reg;
+     end
     // rgb buffer value set via switches
-    always @(posedge clk_100mhz, posedge reset)
-    if (reset)
-        rgb_reg <= 0;
-    else
-    begin
-        bram_addr <= (y*320) + x;
-        if(bram_addr < 77120 && x<320 && y <240)
+    always @(posedge clk_100mhz) begin
+        if (reset)
+            rgb_reg <= 0;
+        else if(mode_reg == 1)
         begin
-            rgb_reg <= bram_dout;
+            bram_addr <= (y*320) + x;
+            if(bram_addr < 77120 && x<320 && y <240)
+            begin
+                rgb_reg <= bram_dout;
+            end
+            else
+                rgb_reg <= 12'b0;
         end
-        else
-            rgb_reg <= 12'b0;
+        else 
+            rgb_reg <= sw;
     end
-    
     // Output RGB signals during active area. Else blank outside of the active area
     assign rgb = (active_area) ? rgb_reg : 12'b0;
     
